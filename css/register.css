@@ -1,0 +1,87 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr  {
+    float: right;
+}
+.header {
+    height: 84px;
+    border-bottom: 2px solid #c81523;
+}
+.header .logo img {
+    height: 83px;
+    padding-bottom: 1px;
+}
+.register_area {
+    height: 522px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+.register_head {
+    height: 42px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    line-height: 42px;
+    padding: 0 20px;
+}
+.register_head .fl {
+    font-size: 18px;
+    font-weight: 400;
+}
+.register_head .fr {
+    font-size: 14px;
+}
+.register_head .fr a {
+    color: #c81523;
+}
+.register_form {
+    width: 600px;
+    margin: 50px auto 0;
+}
+.register_form ul li {
+    margin-bottom: 20px;
+}
+.register_form ul li label {
+    /* 转换为行内块元素才能设置宽度，从而设置text-align */
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+}
+.register_form ul li .inp {
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+.error {
+    color: red;
+}
+.error_icon {
+    display: inline-block;
+    /* 垂直居中 */
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url(../images/error.png) no-repeat;
+    margin-top: -2px;
+}
+.agree {
+    padding-left: 95px;
+}
+.agree input {
+    vertical-align: middle;
+}
+.agree a {
+    color: #1ba1e6;
+}
+.btn {
+    width: 200px;
+    height: 34px;
+    background-color: #c81623;
+    font-size: 14px;
+    color: #fff;
+    margin: 30px 0 0 100px;
+}

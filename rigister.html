@@ -6,10 +6,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>注册页面</title>
+    <!-- favicon图标 -->
+    <link rel="shortcut icon" href="bitbug_favicon.ico" />
+    <!-- 引入初始化样式 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入注册页面样式 -->
+    <link rel="stylesheet" href="css/register.css">
 </head>
 
 <body>
-
+    <div class="w">
+        <!-- 头部区域 start -->
+        <header class="header">
+            <div class="logo">
+                <a href="index.html" title="购物商城">
+                    <img src="images/logo.jpg" alt="">
+                </a>
+            </div>
+        </header>
+        <!-- 头部区域 end -->
+        <!-- 注册主体区域 start -->
+        <div class="register_area">
+            <div class="register_head">
+                <div class="fl">
+                    注册新用户
+                </div>
+                <div class="fr">
+                    已有账号，请<a href="#">登录</a>
+                </div>
+            </div>
+            <div class="register_form">
+                <form action="">
+                    <ul>
+                        <li>
+                            <label for="">手机号：</label>
+                            <input type="text" class="inp">
+                            <span class="error">
+                                <i class="error_icon"></i>
+                                格式不正确，请重新输入
+                            </span>
+                        </li>
+                        <li>
+                            <label for="">短信验证码：</label>
+                            <input type="text" class="inp">
+                            <!-- <span class="error">
+                                <i class="error_icon"></i>
+                                格式不正确，请重新输入
+                            </span> -->
+                        </li>
+                        <li>
+                            <label for="">登录密码：</label>
+                            <input type="password" class="inp">
+                            <!-- <span class="error">
+                                <i class="error_icon"></i>
+                                格式不正确，请重新输入
+                            </span> -->
+                        </li>
+                        <li>
+                            <label for="">确认密码：</label>
+                            <input type="password" class="inp">
+                            <!-- <span class="error">
+                                <i class="error_icon"></i>
+                                格式不正确，请重新输入
+                            </span> -->
+                        </li>
+                        <li class="agree">
+                            <input type="checkbox">
+                            同意协议并注册 <a href="#">《知晓用户协议》</a>
+                        </li>
+                        <li>
+                            <input type="submit" value="完成注册" class="btn">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <!-- 注册主体区域 end -->
+        <footer class="footer"></footer>
+    </div>
 </body>
 
 </html>
