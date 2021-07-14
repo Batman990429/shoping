@@ -1,0 +1,74 @@
+/* 清除内外边距 */
+* {
+    margin: 0;
+    padding: 0;
+    /* CSS3盒子模型 */
+    /* 元素指定的任何内边距和边框都将在已设定的宽度和高度内进行绘制 */
+    box-sizing: border-box;
+}
+
+/* 斜体文字不倾斜 */
+em, i {
+    font-style: normal;
+}
+
+/* 去掉li的小圆点 */
+li {
+    list-style: none;
+}
+
+img {
+    /* 照顾低版本浏览器，如图片外包含了链接会有边框的问题 */
+    border: 0;
+    /* 解决图片底侧有空白缝隙的问题 */
+    vertical-align: middle;
+}
+button {
+    /* 当鼠标经过button按钮时，鼠标会变成小手 */
+    cursor: pointer
+}
+
+a {
+    color: #666;
+    /* 去掉链接下划线 */
+    text-decoration: none;
+}
+
+a:hover {
+    /* 当鼠标经过时链接改变颜色 */
+    color: #c81623
+}
+button, input {
+    /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    /* 去掉默认边框 */
+    border: 0;
+    /* outline （轮廓）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用 */
+    outline: none;
+}
+
+body {
+    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666
+}
+
+.hide, .none {
+    /* 隐藏元素 */
+    display: none;
+}
+
+/* 父级添加after伪元素清除浮动 */
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    /* IE6、7专有 */
+    *zoom: 1;
+}

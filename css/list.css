@@ -1,0 +1,46 @@
+.sk {
+    position: absolute;
+    left: 174px;
+    top: 40px;
+    padding: 3px 0 0 14px;
+    border-left: 1px solid #c81523;
+}
+.sk_list ul li {
+    float: left;
+}
+.sk_list ul li a {
+    line-height: 47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+.sk_con ul li {
+    float: left;
+}
+.sk_con ul li a {
+    line-height: 50px;
+    padding: 0 35px;
+    font-size: 14px;
+}
+
+.nav {
+    /* 上面的浮动的盒子溢出，导致文字环绕显示 */
+    overflow: hidden;
+}
+
+.sk_bd ul li {
+    /* 解决图片溢出 */
+    float: left;
+    overflow: hidden;
+    width: 290px;
+    height: 460px;
+    margin-right: 13px;
+    border: 1px solid transparent;
+}
+.sk_bd ul li:nth-child(4n) {
+    margin: 0;
+}
+.sk_bd ul li:hover {
+    border: 1px solid #c81523;
+}
